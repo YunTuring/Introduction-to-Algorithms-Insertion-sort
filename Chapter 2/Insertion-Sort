@@ -1,4 +1,4 @@
-/*# 《算法导论》中文第三版第二章所有算法的Java实现之插入排序*/
+/* 《算法导论》中文第三版第二章所有算法的Java实现之插入排序*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -45,4 +45,3 @@ public class Insertion_Sort {
 		}
 	}
 }
-
