@@ -1,27 +1,27 @@
 import java.util.Scanner;
-/* @Author: Ö£¸ßĞË
+/* @Author: YunTuring
  * @Contact: zheng_gao_xing@163.com
  * @Date 2017/06/25 */
 public class BinaryPlus {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("ÇëÊäÈëÒ»×éÔªËØÎª0»ò1µÄ³¤¶ÈÎª7µÄÊı×é:");
+		System.out.println("è¯·è¾“å…¥ä¸€ç»„å…ƒç´ ä¸º0æˆ–1çš„é•¿åº¦ä¸º7çš„æ•°ç»„:");
 		int[] arr1 = new int[7];
 		Scanner sc = new Scanner(System.in);
 		for(int i=0;i<arr1.length;i++){
 			arr1[i] = sc.nextInt();
 		}
-		System.out.println("ÄúÊäÈëµÄÊı×éÊÇ:");
+		System.out.println("æ‚¨è¾“å…¥çš„æ•°ç»„æ˜¯:");
 		for(int elem:arr1){
 			System.out.print(elem+" ");
 		}
-		System.out.println("\nÇëÊäÈëÁíÒ»×éÔªËØÎª0»ò1µÄ³¤¶ÈÎª7µÄÊı×é:");
+		System.out.println("\nè¯·è¾“å…¥å¦ä¸€ç»„å…ƒç´ ä¸º0æˆ–1çš„é•¿åº¦ä¸º7çš„æ•°ç»„:");
 		int[] arr2 = new int[7];
 		for(int i=0;i<arr2.length;i++){
 			arr2[i] = sc.nextInt();
 		}
 		sc.close();
-		System.out.println("ÄúÊäÈëµÄÊı×éÊÇ:");
+		System.out.println("æ‚¨è¾“å…¥çš„æ•°ç»„æ˜¯:");
 		for(int elem1:arr2){
 			System.out.print(elem1+" ");
 		}
@@ -45,7 +45,7 @@ public class BinaryPlus {
 			arr3[0] = 1;
 		}else{arr3[0] = 0;}
 		
-		System.out.println("\nÁ½Êı×éÏà¼ÓºóµÄÊı×éÎª£º");
+		System.out.println("\nä¸¤æ•°ç»„ç›¸åŠ åçš„æ•°ç»„ä¸ºï¼š");
 		for(int elem3:arr3){
 			System.out.print(elem3+" ");
 		}
