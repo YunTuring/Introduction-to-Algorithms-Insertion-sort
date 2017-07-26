@@ -1,22 +1,22 @@
-/*¹é²¢ÅÅĞòËã·¨*/
-/* @Author: Ö£¸ßĞË
+/*å½’å¹¶æ’åºç®—æ³•*/
+/* @Author: YunTuring
  * @Contact: zheng_gao_xing@163.com
  * @Date 2017/07/01 */
-//²Î¿¼ÍøÖ·£ºhttp://blog.csdn.net/morewindows/article/details/6678165/
+//å‚è€ƒç½‘å€ï¼šhttp://blog.csdn.net/morewindows/article/details/6678165/
 
-// ±¾´úÂë(edition 1)ÊÇstupidµÄ×ö·¨£¬Ã»ÓĞÔËÓÃµİ¹é£¬²»ÊÇÍ¨ÓÃµÄ·½·¨£¬Èç¹ûÊı×é¸ü³¤»òÊÇ¸ü¶Ìµã£¬Ôò»á±¨´í
-// ÕâÊÇµÚÒ»´Î³¢ÊÔ¹é²¢ÅÅĞò£¬¾­¹ıÕâÒ»´Î×Ô¼º×ÁÄ¥·¢ÏÖ×Ô¼º´æÔÚÒ»Ğ©ÎÊÌâ£¬ÔÚÏÂÒ»°æedition 2ÖĞÎÒ»áĞ´³öÍ¨ÓÃµÄ¹é²¢ÅÅĞò
+// æœ¬ä»£ç (edition 1)æ˜¯stupidçš„åšæ³•ï¼Œæ²¡æœ‰è¿ç”¨é€’å½’ï¼Œä¸æ˜¯é€šç”¨çš„æ–¹æ³•ï¼Œå¦‚æœæ•°ç»„æ›´é•¿æˆ–æ˜¯æ›´çŸ­ç‚¹ï¼Œåˆ™ä¼šæŠ¥é”™
+// è¿™æ˜¯ç¬¬ä¸€æ¬¡å°è¯•å½’å¹¶æ’åºï¼Œç»è¿‡è¿™ä¸€æ¬¡è‡ªå·±ç¢ç£¨å‘ç°è‡ªå·±å­˜åœ¨ä¸€äº›é—®é¢˜ï¼Œåœ¨ä¸‹ä¸€ç‰ˆedition 2ä¸­æˆ‘ä¼šå†™å‡ºé€šç”¨çš„å½’å¹¶æ’åº
 public class Merge_Sort_stupid {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		   int[] arr = {12,34,15,11,54,67,77,12,5,32,12,9,17};
-		   printArray("ÅÅĞòÇ°£º",arr);
+		   printArray("æ’åºå‰ï¼š",arr);
 		   MergeSort(arr);
-		   printArray("ÅÅĞòºó£º",arr);
+		   printArray("æ’åºåï¼š",arr);
 	}
 	
-	private static void printArray(String str, int[] arr){ // Ë¼¿¼ÎªÊ²Ã´ÓÃstaticĞŞÊÎ
+	private static void printArray(String str, int[] arr){ // æ€è€ƒä¸ºä»€ä¹ˆç”¨staticä¿®é¥°
 		System.out.println(str);
 		for(int i=0;i<arr.length;i++){
 			System.out.print(arr[i]+" ");
@@ -24,18 +24,18 @@ public class Merge_Sort_stupid {
 	}
 	
 	private static void MergeSort(int[] arr){
-		// °ÑÒ»¸öÊı×é°´ÕÕÃ¿Á½¸öÔªËØÏà±È½ÏĞÎ³ÉµÄ¶ş¸öÔªËØµÄÓĞĞòÊı×é
+		// æŠŠä¸€ä¸ªæ•°ç»„æŒ‰ç…§æ¯ä¸¤ä¸ªå…ƒç´ ç›¸æ¯”è¾ƒå½¢æˆçš„äºŒä¸ªå…ƒç´ çš„æœ‰åºæ•°ç»„
 		Sort(arr);
-		// ½«¶ş¸öÓĞĞòµÄĞòÁĞºÏ²¢ÆğÀ´
+		// å°†äºŒä¸ªæœ‰åºçš„åºåˆ—åˆå¹¶èµ·æ¥
 	}
 	
-	private static void Sort(int[] arr){ // ½«Ò»¸öÊı×é°´ÕÕÃ¿Á½¸öÔªËØÏà±È½ÏĞÎ³ÉµÄÓĞĞòÊı×é
-		// ±ÈÈçarr = {12,34,24,53,46,78,19}  (12,34) (24,53) (46,78) (19)
-		System.out.println("µÚÒ»´ÎÅÅĞòÎª£º");
+	private static void Sort(int[] arr){ // å°†ä¸€ä¸ªæ•°ç»„æŒ‰ç…§æ¯ä¸¤ä¸ªå…ƒç´ ç›¸æ¯”è¾ƒå½¢æˆçš„æœ‰åºæ•°ç»„
+		// æ¯”å¦‚arr = {12,34,24,53,46,78,19}  (12,34) (24,53) (46,78) (19)
+		System.out.println("ç¬¬ä¸€æ¬¡æ’åºä¸ºï¼š");
 		int i = 0;
 		int[] tem = new int[2];
 		while(i<arr.length){
-			if(i+1>=arr.length){  // Ô¤·À×îºóÒ»¸öÔªËØµÄÏÂ±êÔ½½ç
+			if(i+1>=arr.length){  // é¢„é˜²æœ€åä¸€ä¸ªå…ƒç´ çš„ä¸‹æ ‡è¶Šç•Œ
 				System.out.print("("+arr[i]+")");
 				break;
 			}
@@ -47,13 +47,13 @@ public class Merge_Sort_stupid {
 				tem[1] = arr[i+1];
 			}
 			System.out.print("("+tem[0]+" "+tem[1]+")");
-			arr[i] = tem[0]; // °ÑµÚÒ»´ÎÅÅĞòºÃµÄÈÔ·Å»ØÔ­Êı×é
+			arr[i] = tem[0]; // æŠŠç¬¬ä¸€æ¬¡æ’åºå¥½çš„ä»æ”¾å›åŸæ•°ç»„
 			arr[i+1] = tem[1];
 			i = i+2;
 		}
 		System.out.println();
 		
-		System.out.println("µÚ¶ş´ÎÅÅĞòÎª£º");
+		System.out.println("ç¬¬äºŒæ¬¡æ’åºä¸ºï¼š");
 		int size = 2;
 		int[] tem2 = new int[arr.length];
 		int index = 0,index1 = 0,index2 = 0;
@@ -94,7 +94,7 @@ public class Merge_Sort_stupid {
 			i1++;
 		}System.out.print(")");
 		
-		System.out.println("\nµÚÈı´ÎÅÅĞòÎª£º");
+		System.out.println("\nç¬¬ä¸‰æ¬¡æ’åºä¸ºï¼š");
 		int[] tem4 = new int[arr.length];
 		int i3=0,index3=0,index4=0,index5=0;
 		while(i3<=arr.length-8){
@@ -151,7 +151,7 @@ public class Merge_Sort_stupid {
 			i3++;
 		}System.out.print(")");
 		
-		System.out.println("\nµÚËÄ´ÎÅÅĞòÎª£º");
+		System.out.println("\nç¬¬å››æ¬¡æ’åºä¸ºï¼š");
 		size = size*2;
 		int i4=0,index6=0,index7=0,index8=0;
 		int[] tem6 = new int[arr.length];
@@ -221,21 +221,21 @@ public class Merge_Sort_stupid {
 		}
 	}
 	
-	private static int[] Merge(int[] arr1, int[] arr2){ // ½«Á½¸öÓĞĞòµÄĞòÁĞºÏ²¢ÆğÀ´
+	private static int[] Merge(int[] arr1, int[] arr2){ // å°†ä¸¤ä¸ªæœ‰åºçš„åºåˆ—åˆå¹¶èµ·æ¥
 		int size = arr1.length + arr2.length;
 		int[] arr = new int[size];
 		int index = 0,index1 = 0,index2 = 0;
-		while(index1<arr1.length && index2<arr2.length){ //ÖÁÉÙÓĞÒ»ÁĞÊı×éÈ«²¿»á±»¹é²¢
+		while(index1<arr1.length && index2<arr2.length){ //è‡³å°‘æœ‰ä¸€åˆ—æ•°ç»„å…¨éƒ¨ä¼šè¢«å½’å¹¶
 			if (arr1[index1]<= arr2[index2]){
 				arr[index++] = arr1[index1++];
 			}else{
 				arr[index++] = arr2[index2++];
 			}
 		}
-		while(index1<arr1.length){ //°Ñarr1ÖĞÊ£ÓàµÄ¹é²¢
+		while(index1<arr1.length){ //æŠŠarr1ä¸­å‰©ä½™çš„å½’å¹¶
 			arr[index++] = arr1[index1++];
 		}
-		while(index2<arr2.length){ // °Ñarr2ÖĞÊ£ÓàµÄ¹é²¢
+		while(index2<arr2.length){ // æŠŠarr2ä¸­å‰©ä½™çš„å½’å¹¶
 			arr[index++] = arr2[index2++];
 		}
 		return arr;
