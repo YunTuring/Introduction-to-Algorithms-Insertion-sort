@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*²åÈëÅÅĞò*/
-/* @Author: Ö£¸ßĞË
+/*æ’å…¥æ’åº*/
+/* @Author: YunTuring
  * @Contact: zheng_gao_xing@163.com
  * @Date 2017/06/24 */
 
@@ -10,18 +10,18 @@ public class Insertion_Sort {
 	public static void main(String args[]){
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»ÁĞÊı×é");
-		ArrayList<String> arr = new ArrayList<String>();  // ´´½¨Ò»¸öArrayListÓÃÀ´½ÓÊÕÔªËØ
+		System.out.println("è¯·è¾“å…¥ä¸€åˆ—æ•°ç»„");
+		ArrayList<String> arr = new ArrayList<String>();  // åˆ›å»ºä¸€ä¸ªArrayListç”¨æ¥æ¥æ”¶å…ƒç´ 
 
 		while(sc.hasNextLine()){ 
 			String a = sc.nextLine();
-			if (a.equals(("end"))){break;}  // Êı×éÊäÈëÒÔend½áÊø
+			if (a.equals(("end"))){break;}  // æ•°ç»„è¾“å…¥ä»¥endç»“æŸ
 			else{
 				arr.add(a);
 			}
 		}
 
-		System.out.println("ÄúÊäÈëµÄÊı×éÈçÏÂ");  // Êä³öÔ­Êı×é
+		System.out.println("æ‚¨è¾“å…¥çš„æ•°ç»„å¦‚ä¸‹");  // è¾“å‡ºåŸæ•°ç»„
 		for (String str : arr){ 
 			System.out.print(str);
 			String tem = str;
@@ -33,8 +33,8 @@ public class Insertion_Sort {
 				array[i] = b;
 			}
 
-			for(int i=1;i<array.length;i++){ //²åÈëÅÅĞò(´ÓĞ¡µ½´óÅÅĞò)
-				int key = array[i];  // ³õÊ¼°ÑµÚÈı¸ö×÷Îª×îĞ¡Öµ
+			for(int i=1;i<array.length;i++){ //æ’å…¥æ’åº(ä»å°åˆ°å¤§æ’åº)
+				int key = array[i];  // åˆå§‹æŠŠç¬¬ä¸‰ä¸ªä½œä¸ºæœ€å°å€¼
 				int j = i-1;
 				while(j>=0 && array[j]>key){
 					array[j+1] = array[j];
@@ -43,7 +43,7 @@ public class Insertion_Sort {
 				array[j+1] = key;
 			}
 			
-			System.out.println("\n²åÈëÅÅĞòËã·¨µÄÊı×éÊÇ£º");
+			System.out.println("\næ’å…¥æ’åºç®—æ³•çš„æ•°ç»„æ˜¯ï¼š");
 			for(int i=0;i<array.length;i++){System.out.print(array[i]+" ");}
 		}
 	}
