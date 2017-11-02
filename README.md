@@ -4,6 +4,4 @@
 >
 >#### Project start time : 2017/6/24
 >
->#### Author: YunTuring
->
->#### Address: Fudan University
+>#### Author: ChinaHQ
