@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /*插入排序*/
-/* @Author: YunTuring
- * @Contact: zheng_gao_xing@163.com
+/* @Author: ChinaHQ
  * @Date 2017/06/24 */
 
 public class Insertion_Sort {
