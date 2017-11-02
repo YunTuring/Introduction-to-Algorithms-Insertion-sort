@@ -1,6 +1,5 @@
 /*归并排序算法*/
-/* @Author: YunTuring
- * @Contact: zheng_gao_xing@163.com
+/* @Author: ChinaHQ
  * @Date 2017/07/01 */
 //参考网址：http://blog.csdn.net/morewindows/article/details/6678165/
 
