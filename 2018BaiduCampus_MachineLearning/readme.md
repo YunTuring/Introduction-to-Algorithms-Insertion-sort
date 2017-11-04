@@ -66,7 +66,7 @@ public class double_prime {
 测试结果1：   
 please input a integer number!    
 100    
-The 100-th double number is: 3049    
+The 100-th double number is: 3049      
 测试结果2：     
 please input a integer number!     
 3000000    
