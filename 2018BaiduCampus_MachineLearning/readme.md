@@ -7,6 +7,7 @@
 import java.util.Scanner;
 /** this code is written by ChinaHQ, 
  * if you have better idea, please contact with me by emailing zheng_gao_xing@163.com;
+ * It's my pleasure to have more communication with anyone who is also interested in algorithms.
  * */
 public class double_prime {
 	public static void main(String[] args){
